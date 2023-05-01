@@ -21,47 +21,54 @@ namespace Utopic_Library
                 case "north":
                     int i = 0;
                     Console.WriteLine(World.roomsArray[i]);
+                    Console.ReadLine();
                     i++;
                     break;
 
                 case "south":
                     int j = 0;
                     Console.WriteLine(World.roomsArray[j]);
+                    Console.ReadLine();
                     j--;
                     break;
 
                 case "weapons":
-                    foreach (var weapon in World.weaponsArray)
+                    for (int read = 0; read < World.weaponsArray.Length; read++)
                     {
-                        Console.WriteLine(weapon.ToString());
+                        Console.WriteLine(World.weaponsArray[1]);
+                        Console.ReadLine();
                     }
                     break;
 
                 case "items":
-                    foreach (var item in World.itemList)
+                    for (int read = 0; read < World.itemList.Count; read++)
                     {
-                        Console.WriteLine(item.ToString());
+                        Console.WriteLine(World.itemList[read]);
+                        Console.ReadLine();
                     }
                     break;
 
                 case "treasure":
-                    foreach (var treasure in World.treasureArray)
+                    for (int read = 0; read < World.treasureArray.Length; read++)
                     {
-                        Console.WriteLine(treasure.ToString());
+                        Console.WriteLine(World.treasureArray[read]);
+                        Console.ReadLine();
                     }
                     break;
 
                 case "potions":
-                    foreach (var potion in World.potionsArray)
+                    for (int read = 0; read < World.potionsArray.Length; read++)
                     {
-                        Console.WriteLine(potion.ToString());
+                        Console.WriteLine(World.potionsArray[read]);
+                        Console.ReadLine();
                     }
                     break;
 
                 case "mobs":
-                    foreach (var mob in World.mobList)
+                    for (int read = 0; read < World.mobList.Count; read++)
                     {
-                        Console.WriteLine(mob.ToString());
+                        Console.WriteLine(World.mobList[read]);
+                        Console.ReadLine();
                     }
                     break;
             }
