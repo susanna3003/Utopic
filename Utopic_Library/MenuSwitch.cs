@@ -19,31 +19,50 @@ namespace Utopic_Library
             switch (userTypes)
             {
                 case "north":
-
+                    int i = 0;
+                    Console.WriteLine(World.roomsArray[i]);
+                    i++;
                     break;
 
                 case "south":
-
+                    int j = 0;
+                    Console.WriteLine(World.roomsArray[j]);
+                    j--;
                     break;
 
                 case "weapons":
-
+                    foreach (var weapon in World.weaponsArray)
+                    {
+                        Console.WriteLine(weapon.ToString());
+                    }
                     break;
 
                 case "items":
-
+                    foreach (var item in World.itemList)
+                    {
+                        Console.WriteLine(item.ToString());
+                    }
                     break;
 
                 case "treasure":
-
+                    foreach (var treasure in World.treasureArray)
+                    {
+                        Console.WriteLine(treasure.ToString());
+                    }
                     break;
 
                 case "potions":
-
+                    foreach (var potion in World.potionsArray)
+                    {
+                        Console.WriteLine(potion.ToString());
+                    }
                     break;
 
                 case "mobs":
-
+                    foreach (var mob in World.mobList)
+                    {
+                        Console.WriteLine(mob.ToString());
+                    }
                     break;
             }
         }
