@@ -8,5 +8,11 @@ namespace Utopic_Library
 {
     class Rooms
     {
+        public string RoomID { get; set; }
+        public string RoomName { get; set; }
+        public string RoomDescription { get; set; }
+        public string RoomExits { get; set; }
+        public string RoomList { get; set; }
+
     }
 }

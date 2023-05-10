@@ -97,13 +97,25 @@ namespace Utopic_Library
 
         public static void LoadMobs()
         {
-            int index = 0;
             StreamReader input;
             input = File.OpenText(@"C:\Users\quayles5806\Source\Repos\Utopic\Utopic_Library\Menu Items\Mobs.csv");
 
             while (!input.EndOfStream)
             {
                 World.mobList.Add(input.ReadLine());
+            }
+
+            input.Close();
+        }
+
+        public static void LoadPlayer()
+        {
+            StreamReader input;
+            input = File.OpenText("PlayerInfo.csv");
+
+            while (!input.EndOfStream)
+            {
+                World.playerInfo.Add(input.ReadLine());
             }
 
             input.Close();

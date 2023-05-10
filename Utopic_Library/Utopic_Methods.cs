@@ -9,24 +9,45 @@ namespace Utopic_Library
 {
     public class Utopic_Methods
     {
-        //public static void MainUtopicMenu()
-        //{
-            // declare boolean sentry
+        public static void GetPlayerName()
+        {
+            Console.WriteLine("What is your name great traveler?");
+            World.players[0].PlayerName = Console.ReadLine();
+            GetPlayerPass();
+        }
 
-            ////declare rooms description
-            //string room1Desc, room2Desc, room3Desc, room4Desc, room5Desc;
+        public static void GetPlayerPass()
+        {
+            Console.WriteLine("Make yourself a password - it must have 1 Capital Letter, 1 lowercase letter, and 1 special character.");
+            World.players[0].PlayerPasswrd = Console.ReadLine();
+            GetPlayerRace();
+        }
 
-            ////declare weapons description
-            //string weapon1Desc, weapon2Desc, weapon3Desc, weapon4Desc;
+        public static void GetPlayerRace()
+        {
+            Console.WriteLine("Now, to choose your race. A list of races is displayed below.");
 
-            ////declare potions description
-            //string potion1Desc, potion2Desc;
+            for (int i = 0; i < World.utopicRaces.Count; i++)
+            {
+                Console.WriteLine(World.utopicRaces[i]);
+            }
 
-            ////declare treasure description
-            //string treasure1Desc, treasure2Desc, treasure3Desc;
+            Console.WriteLine("If you have chosen your race, please type it below.");
+            World.players[0].PlayerRace = Console.ReadLine();
+            GetPlayerClass();
+        }
 
-            ////declare mobs description
-            //string mob1Desc, mob2Desc, mob3Desc, mob4Desc, mob5Desc;
+        public static void GetPlayerClass()
+        {
+            Console.WriteLine("Now choose a class. A list of classes is displayed below.");
+
+            for (int i = 0; i < World.utopicClasses.Count; i++)
+            {
+                Console.WriteLine(World.utopicClasses[i]);
+            }
+            Console.WriteLine("If you have chosen your class, please type it below");
+            World.players[0].PlayerClass = Console.ReadLine();
+        }
 
     }
 }

@@ -8,6 +8,11 @@ namespace Utopic_Library
 {
     class Weapons
     {
-
+        public string WeaponID { get; set; }
+        public string WeaponName { get; set; }
+        public string WeaponDescription { get; set; }
+        public string WeaponDamageType { get; set; }
+        public string WeaponPrice { get; set; }
+        public string WeaponDamage { get; set; }
     }
 }

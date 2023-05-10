@@ -65,6 +65,7 @@
     </None>
     <None Include="Menu Items\Treasure.csv" />
     <None Include="Menu Items\Weapons.csv" />
+    <None Include="Object Files\PlayerInfo.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

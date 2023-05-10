@@ -17,8 +17,11 @@ namespace ConsoleUI
 {
     class Program
     {
+            
         static void Main(string[] args)
         {
+
+            World.players.Add(new Player());
             //todo 
 
             Load.LoadGame();
