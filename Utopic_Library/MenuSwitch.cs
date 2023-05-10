@@ -12,6 +12,10 @@ namespace Utopic_Library
         public static void WelcomeMethod()
         {
             Console.WriteLine("Welcome to Utopic!");
+            Player.GetPlayerName();
+            Player.GetPlayerPass();
+            Player.GetPlayerRace();
+            Player.GetPlayerClass();
             Console.WriteLine("Type North or South to begin your journey.");
             Console.WriteLine("Type Weapons, Items, Treasure, Potions, or Mobs to see the list for each.");
             Console.WriteLine("Type attack for combat or EXIT to leave.");

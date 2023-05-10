@@ -25,5 +25,8 @@ namespace Utopic_Library
 
         public static List<string> itemList = new List<string>();
         public static List<string> mobList = new List<string>();
+
+        public static List<string> utopicRaces = new List<string>() { "Human", "Elf", "Sea Walker", "Goblin", "Dwarf", "Flight", "Elven Halfling" };
+        public static List<string> utopicClasses = new List<string>() { "Architect", "Scientist", "Scholar", "Witch", "Warrior", "Rover" };
     }
 }
