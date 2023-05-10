@@ -49,6 +49,7 @@
     <Compile Include="Player.cs" />
     <Compile Include="Potions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReadCSV.cs" />
     <Compile Include="Rooms.cs" />
     <Compile Include="Treasure.cs" />
     <Compile Include="Utopic_Methods.cs" />
@@ -65,7 +66,30 @@
     </None>
     <None Include="Menu Items\Treasure.csv" />
     <None Include="Menu Items\Weapons.csv" />
+    <None Include="Object Files\BalconyInfo.csv" />
+    <None Include="Object Files\BedroomInfo.csv" />
+    <None Include="Object Files\BowInfo.csv" />
+    <None Include="Object Files\CompassInfo.csv" />
+    <None Include="Object Files\GoldenApplePotionInfo.csv" />
+    <None Include="Object Files\GoldInfo.csv" />
+    <None Include="Object Files\HallwayInfo.csv" />
+    <None Include="Object Files\HarpsInfo.csv" />
+    <None Include="Object Files\HarryCloakPotionInfo.csv" />
+    <None Include="Object Files\HeartMutoTreeInfo.csv" />
+    <None Include="Object Files\HeirloomLocketInfo.csv" />
+    <None Include="Object Files\JournalInfo.csv" />
+    <None Include="Object Files\LivingRoomInfo.csv" />
+    <None Include="Object Files\MutoSpearInfo.csv" />
+    <None Include="Object Files\MutoTrollInfo.csv" />
     <None Include="Object Files\PlayerInfo.csv" />
+    <None Include="Object Files\PupsInfo.csv" />
+    <None Include="Object Files\SeaSerpentInfo.csv" />
+    <None Include="Object Files\SeeingStonesInfo.csv" />
+    <None Include="Object Files\SwordInfo.csv" />
+    <None Include="Object Files\TempingRodInfo.csv" />
+    <None Include="Object Files\ThrowingKnivesInfo.csv" />
+    <None Include="Object Files\UtoTrollInfo.csv" />
+    <None Include="Object Files\WalkwayInfo.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

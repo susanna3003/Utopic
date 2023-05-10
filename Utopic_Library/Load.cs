@@ -20,93 +20,93 @@ namespace Utopic_Library
             LoadItems();
             LoadMobs();
         }
-        public static void LoadRooms()
-        {
-            int index = 0;
-            StreamReader input;
-            input = File.OpenText(@"C:\Users\quayles5806\Source\Repos\Utopic\Utopic_Library\Menu Items\Rooms.csv");
+        //public static void LoadRooms()
+        //{
+        //    int index = 0;
+        //    StreamReader input;
+        //    input = File.OpenText(@"C:\Users\quayles5806\Source\Repos\Utopic\Utopic_Library\Menu Items\Rooms.csv");
 
-            while (index < World.roomsArray.Length && !input.EndOfStream)
-            {
-                World.roomsArray[index] = input.ReadLine();
-                index++;
-            }
+        //    while (index < World.roomsArray.Length && !input.EndOfStream)
+        //    {
+        //        World.roomsArray[index] = input.ReadLine();
+        //        index++;
+        //    }
 
-            input.Close();
+        //    input.Close();
 
-        }
+        //}
 
-        public static void LoadWeapons()
-        {
-            int index = 0;
-            StreamReader input;
-            input = File.OpenText(@"C:\Users\quayles5806\Source\Repos\Utopic\Utopic_Library\Menu Items\Weapons.csv");
+        //public static void LoadWeapons()
+        //{
+        //    int index = 0;
+        //    StreamReader input;
+        //    input = File.OpenText(@"C:\Users\quayles5806\Source\Repos\Utopic\Utopic_Library\Menu Items\Weapons.csv");
 
-            while (index < World.weaponsArray.Length && !input.EndOfStream)
-            {
-                World.weaponsArray[index] = input.ReadLine();
-                index++;
-            }
+        //    while (index < World.weaponsArray.Length && !input.EndOfStream)
+        //    {
+        //        World.weaponsArray[index] = input.ReadLine();
+        //        index++;
+        //    }
 
-            input.Close();
-        }
+        //    input.Close();
+        //}
 
-        public static void LoadPotions()
-        {
-            int index = 0;
-            StreamReader input;
-            input = File.OpenText(@"C:\Users\quayles5806\Source\Repos\Utopic\Utopic_Library\Menu Items\Potions.csv");
+        //public static void LoadPotions()
+        //{
+        //    int index = 0;
+        //    StreamReader input;
+        //    input = File.OpenText(@"C:\Users\quayles5806\Source\Repos\Utopic\Utopic_Library\Menu Items\Potions.csv");
 
-            while (index < World.potionsArray.Length && !input.EndOfStream)
-            {
-                World.potionsArray[index] = input.ReadLine();
-                index++;
-            }
+        //    while (index < World.potionsArray.Length && !input.EndOfStream)
+        //    {
+        //        World.potionsArray[index] = input.ReadLine();
+        //        index++;
+        //    }
 
-            input.Close();
-        }
+        //    input.Close();
+        //}
 
-        public static void LoadTreasures()
-        {
-            int index = 0;
-            StreamReader input;
-            input = File.OpenText(@"C:\Users\quayles5806\Source\Repos\Utopic\Utopic_Library\Menu Items\Treasure.csv");
+        //public static void LoadTreasures()
+        //{
+        //    int index = 0;
+        //    StreamReader input;
+        //    input = File.OpenText(@"C:\Users\quayles5806\Source\Repos\Utopic\Utopic_Library\Menu Items\Treasure.csv");
 
-            while (index < World.treasureArray.Length && !input.EndOfStream)
-            {
-                World.treasureArray[index] = input.ReadLine();
-                index++;
-            }
+        //    while (index < World.treasureArray.Length && !input.EndOfStream)
+        //    {
+        //        World.treasureArray[index] = input.ReadLine();
+        //        index++;
+        //    }
 
-            input.Close();
-        }
+        //    input.Close();
+        //}
 
-        public static void LoadItems()
-        {
-            int index = 0;
-            StreamReader input;
-            input = File.OpenText(@"C:\Users\quayles5806\Source\Repos\Utopic\Utopic_Library\Menu Items\Items.csv");
+        //public static void LoadItems()
+        //{
+        //    int index = 0;
+        //    StreamReader input;
+        //    input = File.OpenText(@"C:\Users\quayles5806\Source\Repos\Utopic\Utopic_Library\Menu Items\Items.csv");
 
-            while (index < World.itemList.Count && !input.EndOfStream)
-            {
-                World.itemList.Add(input.ReadLine());
-            }
+        //    while (index < World.itemList.Count && !input.EndOfStream)
+        //    {
+        //        World.itemList.Add(input.ReadLine());
+        //    }
 
-            input.Close();
-        }
+        //    input.Close();
+        //}
 
-        public static void LoadMobs()
-        {
-            StreamReader input;
-            input = File.OpenText(@"C:\Users\quayles5806\Source\Repos\Utopic\Utopic_Library\Menu Items\Mobs.csv");
+        //public static void LoadMobs()
+        //{
+        //    StreamReader input;
+        //    input = File.OpenText(@"C:\Users\quayles5806\Source\Repos\Utopic\Utopic_Library\Menu Items\Mobs.csv");
 
-            while (!input.EndOfStream)
-            {
-                World.mobList.Add(input.ReadLine());
-            }
+        //    while (!input.EndOfStream)
+        //    {
+        //        World.mobList.Add(input.ReadLine());
+        //    }
 
-            input.Close();
-        }
+        //    input.Close();
+        //}
 
         public static void LoadPlayer()
         {

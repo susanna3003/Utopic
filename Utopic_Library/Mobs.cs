@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Utopic_Library
 {
-    class Mobs
+    public class Mobs
     {
         public string MobID { get; set; }
         public string MobName { get; set; }

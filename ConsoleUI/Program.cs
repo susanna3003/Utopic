@@ -22,6 +22,9 @@ namespace ConsoleUI
         {
 
             World.players.Add(new Player());
+            
+            
+
             //todo 
 
             Load.LoadGame();
@@ -37,7 +40,7 @@ namespace ConsoleUI
                 {
                     case "north":
                         i++;
-                        Console.WriteLine(World.roomsArray[i]);
+                        Console.WriteLine(World.rooms[i]);
                         break;
 
                     case "south":

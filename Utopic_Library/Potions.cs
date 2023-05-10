@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Utopic_Library
 {
-    class Potions
+    public class Potions
     {
         public string PotionID { get; set; }
         public string PotionName { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Utopic_Library
 {
-    class Treasure
+    public class Treasure
     {
         public string TreasureID { get; set; }
         public string TreasureName { get; set; }
